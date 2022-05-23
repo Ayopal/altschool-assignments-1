@@ -25,7 +25,7 @@ body {
 
 /* NAV MENU */
 nav {
-    position: fixed;
+    /* position: fixed; */
     display: flex;
     width: 100vw;
     height: 65px;
@@ -68,6 +68,14 @@ nav a.active {
     color: var(--blue-bk);
    transform: scale(1.05);
 }
+
+/* nav a:active {
+    background: var(--text-light);
+    padding: 7px 10px;
+    border-radius: 10px;
+    color: var(--blue-bk);
+   transform: scale(1.05);
+} */
 
 /* LOGO */
 .logo {
@@ -279,4 +287,89 @@ h1:hover {
 
 .education span {
     font-size: 14px;
+}
+
+
+
+
+/* MY EXPERIENCE SECTION */
+.work {
+   height: 600px;
+   position: relative;
+   background: var(--white-c);
+}
+
+
+.work-container {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    color: var(--text-light)
+}
+
+
+.work .vertical {
+    height: 200px;
+    border-left: 1px solid var(--text-light);
+    opacity: 0.8;
+    position: absolute;
+    left: 50%;
+    top: 19%;
+}
+
+.work h2 {
+    margin-left: 330px;
+    position: relative;
+    top: 90px;
+    color: var(--blue-bk);
+}
+
+.work-container ul{
+    margin-right: 120px;
+    margin-top: 80px;
+}
+
+.work-container ul li {
+    margin-bottom: 10px;
+}
+
+.work-container ul li a {
+    font-weight:800
+}
+
+.work span {
+    font-size: 14px;
+}
+
+
+/* MY HOOBIES SECTION */
+
+#hobbies {
+    background: var(--blue-bk);
+}
+
+#hobbies h2{
+    color: var(--another)
+}
+
+.hobbies-container ul{
+    margin-right: 340px;
+}
+
+
+/* ARROW UP */
+.up{
+    position: fixed;
+    color: var(--white-c);
+    width: 40px;
+    height: 40px;
+    top: 75%;
+    right: 0;
+    padding: 10px;
+    border: 1px solid white;
+    background: var(--blue-bk);
 }
