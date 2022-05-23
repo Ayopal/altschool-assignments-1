@@ -107,11 +107,16 @@ p {
     color: var(--text-light);
 }
 
+p a{
+    text-decoration: none;
+    color: var(--another);
+}
+
 .form-text {
     position: relative;
     width: 700px;
     line-height: 40px;
-    top: 120px;
+    top: 10px;
 }
 
 /* FORM FIELDS */
@@ -208,5 +213,4 @@ color: black;
     opacity: 0.4;
     position: absolute;
     left: 50%;
-    top: 20%;
 }

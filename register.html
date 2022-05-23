@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/register.css">
     <title>Contact</title>
 </head>
 <body>
@@ -20,37 +20,76 @@
             <l1><a href="">Hobbies</a></l1>
             <li><a href="contact.html"> Contact</a></li>
             <l1><a href="login.html">Login</a></l1>
-            <l1><a href="register.html">Register</a></l1>
+            <l1><a class="active" href="register.html">Register</a></l1>
         </ul>
 </nav>
 
+
+<!-- MAIN BODY CONTENT -->
 <div class="wrapper">
     <div class="container">
         <div class="form-text">
-            <h2>CONTACT ME</h2>
-            <p>
-                You Got A Project To Execute ? <br>
-                Get your space suit ready and tell me your ideas,<br>
-                I will turn your idea into tech and place it in the web
-            </p>
+            <h2>REGISTER</h2>
+            <p>Become a registered member and enjoy discounts for your next project. Have an account already? <a href="login.html">Login Here</a></p>
         </div>
 
+        <!-- VERTICAL MIDDLE LINE -->
         <div class="vertical"></div>
 
+        <!-- REGISTER FORM -->
         <form action="">
-            <label for="name">Name</label>
-            <input type="name" name="name" required>
-            <label for="email">Email</label>
-            <input type="email" required>
-            <label for="text">Message</label>
-            <input type="text">
-            <label for="dropdown">Priority</label>
-            <select class="drop" type="dropdown">
-                <option value="Urgent">Urgent</option>
-                <option value="Not-Urgent">Not-Urgent</option>
-            </select>
+            <div>
+                <label for="fname">First Name</label>
+                <input type="name" name="fname" autocomplete="on" required> 
+            </div>
+            
+            <div>
+                <label for="lname">Last Name</label>
+                <input type="name" name="lname" required>
+            </div>
+            
+            <div>
+                <label for="number">Phone Number</label>
+                <input type="tel" name="number" autocomplete="on"  required>
+            </div>
 
-            <a href=""><button class="btn">HIT ME UP</button></a>
+            <div>
+                <label for="gender">Gender</label>
+            <select class="drop" type="dropdown">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Anonymous">Anonymous</option>
+            </select>
+            </div>
+
+            <div>
+                <label for="country">Country</label>
+                <input type="textarea" name="country" autocomplete="on"  required>
+            </div>
+            
+            <div>
+                <label for="state">State/Province</label>
+                <input type="textarea" name="state">
+            </div>
+
+            <div>
+                <label for="username">Username</label>
+                <input type="textarea" name="username" required>
+            </div>
+            
+           <div>
+                <label for="password">Password</label>
+                <input type="password" minlength="4" maxlength="8" size="8" placeholder="Min of 4 and Max of 8" autocomplete="current-password" required>
+           </div>
+            
+           <div>
+                <label for="cpassword"> Confirm Password</label>
+                <input type="password" minlength="4" maxlength="8" size="8" placeholder="Min of 4 and Max of 8" autocomplete="current-password" required>
+           </div>
+            
+            
+            
+            <a href=""><button class="btn">SIGN UP</button></a>
         </form>
     </div>
 </div>
